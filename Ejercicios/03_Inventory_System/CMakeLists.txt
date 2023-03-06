@@ -1,11 +1,10 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(InventorySystem LANGUAGES CXX)
+project(InventorySystem LANGUAGES C)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+#target_include_directories(InventorySystem PRIVATE ${CMAKE_SOURCE_DIR})
 
-set(SOURCES main.cpp)
+set(SOURCES variables.h ventana.h ControllerLogin.h main.c)
 
 add_executable(InventorySystem ${SOURCES})
 
